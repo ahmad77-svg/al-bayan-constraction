@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>تفاصيل المشروع | AL-BAYAN</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="top">
+  <div class="container nav">
+    <div class="brand">
+      <img src="images/لوغو/بيان.jpeg" alt="FJC">
+      <div>
+        <h3>AL-BAYAN</h3>
+        <p>شركة البيان للإعمار</p>
+      </div>
+    </div>
+
+    <a class="nav-btn" href="index.html#projects">العودة للمشاريع</a>
+  </div>
+</header>
+
+<section class="project-page container">
+
+  <a href="index.html#project" class="back-link">← العودة إلى المشاريع</a>
+
+  <div class="project-title-box">
+    <span id="projectType"></span>
+
+    <h1 id="projectTitleAr"></h1>
+    <h2 id="projectTitleEn" class="project-en-title"></h2>
+
+    <div class="project-meta">
+      <div><b>الموقع:</b> <span id="projectLocationAr"></span></div>
+      <div><b>Location:</b> <span id="projectLocationEn"></span></div>
+      <div><b>سنة التنفيذ:</b> <span id="projectYear"></span></div>
+    </div>
+
+    <p id="projectDescriptionAr"></p>
+    <p id="projectDescriptionEn" class="en"></p>
+  </div>
+
+  <h2 class="gallery-title">صور من مراحل تنفيذ المشروع</h2>
+  <p class="gallery-subtitle">Project Execution Gallery</p>
+<div class="project-gallery-wrap">
+  <button class="gallery-arrow gallery-prev" id="galleryPrev">›</button>
+
+  <div class="project-execution-gallery" id="projectGallery"></div>
+
+  <button class="gallery-arrow gallery-next" id="galleryNext">‹</button>
+</div>
+
+<div class="gallery-counter" id="galleryCounter">1 / 1</div>
+
+  <div class="project-action">
+    <button id="similarProjectBtn">طلب مشروع مشابه</button>
+  </div>
+
+</section>
+
+<script src="project.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
