@@ -97,7 +97,7 @@ nav a{
   align-items:center;
   background:
     linear-gradient(rgba(7,27,46,.74), rgba(7,27,46,.62)),
-    url("images/خلفية/البيان.png");
+    url("images/خلفية/بيان.jpg");
   background-size:cover;
   background-position:center;
   color:white;
@@ -387,7 +387,7 @@ transform:translateY(-8px);
 .hero{
   background:
   linear-gradient(rgba(7,27,46,.74), rgba(7,27,46,.62)),
-  url("images//خلفية/بن.png");
+  url("images//خلفية/ب.jpg");
 
   background-size:cover;
   background-position:center;
