@@ -33,6 +33,23 @@
 
 <header class="top">
   <div class="container nav">
+   <div class="mobile-nav">
+  <button
+    class="menu-toggle"
+    id="menuToggle"
+    type="button"
+    aria-label="فتح القائمة"
+  >
+    ☰
+  </button>
+
+  <div class="mobile-dropdown" id="mobileDropdown">
+    <a href="#about">من نحن</a>
+    <a href="#projects">مشاريعنا</a>
+    <a href="#contact">تواصل معنا</a>
+  </div>
+</div>
+    
     <div class="brand">
       <hd="images/لوغو/بيان.jpeg" alt="البيان Logo">
       <div>
@@ -84,11 +101,16 @@
   <div class="about-grid">
     <div class="text-card">
       <h3>رسالة تعريفية عن الشركة</h3>
-      <p>
-        ،شركة البيان للإعمار  اللتي تأسست منذ عام 1994,لأصحابها مرعي وعلي الفجر وهي من شركات القطاع الخاص
-        الشركة تقوم بتنفيذ مختلف المشاريع العمرانية والسكنية والطرقية ومشاريع
-       البنية التحتية والخدمات العامة.
-       يبلغ رأس مال الشركة(12.000.000.000)ل.س
+      <p class="about-highlight">
+        شركة البيان لأصحابها مرعي وعلي الفجر ذات تصنيف ممتاز للطرق والجسور في الجمهورية العربية السورية
+      
+    
+         اللتي تأسست منذ عام 1994 وهي من شركات القطاع الخاص
+       . الشركة تقوم بتنفيذ مختلف المشاريع العمرانية والسكنية والطرقية ومشاريع
+      
+     البنية التحتية والخدمات العامة.
+       $( 000.000 3)
+     يبلغ رأس مال الشركة,
        تعتمد الشركة في عملها على خبرة كوادرها الفنية والهندسية المتخصصة
         وتتبع أسلوب تنفيذ عالي الجودة في المشاريع السكنية، البنية التحتية،
         الطرق، وكافة الأعمال التكميلية.
@@ -461,6 +483,7 @@ AL-Bayan also owns a modern fleet of heavy machinery, equipment, workshops, and 
         @ahmad.dev.7
     </a>
 </div>
+<section id="contact" class="contact-section container">
 <h2>تواصل معنا</h2>
 
 <p class="contact-sub">
@@ -532,6 +555,7 @@ onclick="window.open('https://wa.me/963994457082','_blank')">
 </button>
 
 </div>
+</section>
 
 <footer class="footer">
   <p>© <span id="year"></span>  شركة االبيان للإعمار</p>
