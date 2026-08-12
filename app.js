@@ -211,4 +211,42 @@ if(openWhatsappModal && whatsappModal && closeWhatsappModal){
     }
   });
 }
+// ============================================================
+// MOBILE MENU
+// ============================================================
 
+// =============================================
+// MOBILE MENU
+// =============================================
+
+const menuToggle = document.getElementById("menuToggle");
+const mobileDropdown = document.getElementById("mobileDropdown");
+
+if (menuToggle && mobileDropdown) {
+
+  menuToggle.addEventListener("click", function (event) {
+    event.stopPropagation();
+
+    mobileDropdown.classList.toggle("open");
+  });
+
+  mobileDropdown.querySelectorAll("a").forEach(function (link) {
+
+    link.addEventListener("click", function () {
+      mobileDropdown.classList.remove("open");
+    });
+
+  });
+
+  document.addEventListener("click", function (event) {
+
+    if (
+      !mobileDropdown.contains(event.target) &&
+      !menuToggle.contains(event.target)
+    ) {
+      mobileDropdown.classList.remove("open");
+    }
+
+  });
+
+}
