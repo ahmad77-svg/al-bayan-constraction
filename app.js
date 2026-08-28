@@ -212,39 +212,45 @@ if(openWhatsappModal && whatsappModal && closeWhatsappModal){
   });
 }
 // ============================================================
+// ============================================================
 // MOBILE MENU
 // ============================================================
 
-// =============================================
-// MOBILE MENU
-// =============================================
+const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileDropdown = document.getElementById("mobileDropdown");
+if (mobileMenuBtn && mobileMenu) {
 
-if (menuToggle && mobileDropdown) {
+  mobileMenuBtn.addEventListener("click", (e) => {
 
-  menuToggle.addEventListener("click", function (event) {
-    event.stopPropagation();
+    e.stopPropagation();
 
-    mobileDropdown.classList.toggle("open");
+    mobileMenu.classList.toggle("show");
+    mobileMenuBtn.classList.toggle("active");
+
   });
 
-  mobileDropdown.querySelectorAll("a").forEach(function (link) {
+  mobileMenu.querySelectorAll("a").forEach((link) => {
 
-    link.addEventListener("click", function () {
-      mobileDropdown.classList.remove("open");
+    link.addEventListener("click", () => {
+
+      mobileMenu.classList.remove("show");
+      mobileMenuBtn.classList.remove("active");
+
     });
 
   });
 
-  document.addEventListener("click", function (event) {
+  document.addEventListener("click", (e) => {
 
     if (
-      !mobileDropdown.contains(event.target) &&
-      !menuToggle.contains(event.target)
+      !mobileMenu.contains(e.target) &&
+      !mobileMenuBtn.contains(e.target)
     ) {
-      mobileDropdown.classList.remove("open");
+
+      mobileMenu.classList.remove("show");
+      mobileMenuBtn.classList.remove("active");
+
     }
 
   });
